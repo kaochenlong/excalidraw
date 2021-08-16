@@ -165,20 +165,6 @@ const initializeScene = async (opts: {
   return null;
 };
 
-const PlusLinkJSX = (
-  <p style={{ direction: "ltr", unicodeBidi: "embed" }}>
-    Introducing Excalidraw+
-    <br />
-    <a
-      href="https://plus.excalidraw.com/?utm_source=excalidraw&utm_medium=banner&utm_campaign=launch"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Try out now!
-    </a>
-  </p>
-);
-
 const ExcalidrawWrapper = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const currentLangCode = languageDetector.detect() || defaultLang.code;
@@ -378,8 +364,7 @@ const ExcalidrawWrapper = () => {
                 border: "1px dashed #aaa",
                 borderRadius: 12,
               }}
-            >
-            </div>
+            ></div>
           </div>
         );
       }
